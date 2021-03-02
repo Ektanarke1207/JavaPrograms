@@ -1,0 +1,688 @@
+2021-02-28 18:27:31,702 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+ 2021-02-28 18:27:31,715 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+ 2021-02-28 18:27:31,716 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+ 2021-02-28 18:27:31,724 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@16d04d3d
+ 2021-02-28 18:27:31,755 DEBUG [main] PlatformDependent:1028 - Platform: Windows
+ 2021-02-28 18:27:31,758 DEBUG [main] PlatformDependent0:417 - -Dio.netty.noUnsafe: false
+ 2021-02-28 18:27:31,761 DEBUG [main] PlatformDependent0:889 - Java version: 15
+ 2021-02-28 18:27:31,764 DEBUG [main] PlatformDependent0:130 - sun.misc.Unsafe.theUnsafe: available
+ 2021-02-28 18:27:31,765 DEBUG [main] PlatformDependent0:154 - sun.misc.Unsafe.copyMemory: available
+ 2021-02-28 18:27:31,766 DEBUG [main] PlatformDependent0:192 - java.nio.Buffer.address: available
+ 2021-02-28 18:27:31,767 DEBUG [main] PlatformDependent0:266 - direct buffer constructor: unavailable
+ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:15)
+2021-02-28 18:27:31,771 DEBUG [main] PlatformDependent0:331 - java.nio.Bits.unaligned: available, true
+ 2021-02-28 18:27:31,772 DEBUG [main] PlatformDependent0:390 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @54d9d12d
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:15)
+2021-02-28 18:27:31,773 DEBUG [main] PlatformDependent0:403 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+ 2021-02-28 18:27:31,774 DEBUG [main] PlatformDependent:1071 - sun.misc.Unsafe: available
+ 2021-02-28 18:27:31,808 DEBUG [main] PlatformDependent:1173 - maxDirectMemory: 4263510016 bytes (maybe)
+ 2021-02-28 18:27:31,812 DEBUG [main] PlatformDependent:1192 - -Dio.netty.tmpdir: C:\Users\EKTA~1.NAR\AppData\Local\Temp (java.io.tmpdir)
+ 2021-02-28 18:27:31,812 DEBUG [main] PlatformDependent:1271 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 2021-02-28 18:27:31,814 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+ 2021-02-28 18:27:31,814 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 2021-02-28 18:27:31,815 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+ 2021-02-28 18:27:31,815 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+ 2021-02-28 18:27:31,828 DEBUG [main] PlatformDependent:932 - org.jctools-core.MpscChunkedArrayQueue: available
+ 2021-02-28 18:27:31,857 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 2021-02-28 18:27:31,858 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 2021-02-28 18:27:32,205 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 2021-02-28 18:27:32,206 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+ 2021-02-28 18:27:32,240 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+ 2021-02-28 18:27:32,250 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+ 2021-02-28 18:27:32,250 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+ 2021-02-28 18:27:32,307 DEBUG [main] PooledByteBufAllocator:154 - -Dio.netty.allocator.numHeapArenas: 8
+ 2021-02-28 18:27:32,308 DEBUG [main] PooledByteBufAllocator:155 - -Dio.netty.allocator.numDirectArenas: 8
+ 2021-02-28 18:27:32,308 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.pageSize: 8192
+ 2021-02-28 18:27:32,308 DEBUG [main] PooledByteBufAllocator:162 - -Dio.netty.allocator.maxOrder: 11
+ 2021-02-28 18:27:32,308 DEBUG [main] PooledByteBufAllocator:166 - -Dio.netty.allocator.chunkSize: 16777216
+ 2021-02-28 18:27:32,309 DEBUG [main] PooledByteBufAllocator:167 - -Dio.netty.allocator.smallCacheSize: 256
+ 2021-02-28 18:27:32,309 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.normalCacheSize: 64
+ 2021-02-28 18:27:32,309 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 2021-02-28 18:27:32,309 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.cacheTrimInterval: 8192
+ 2021-02-28 18:27:32,309 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 2021-02-28 18:27:32,310 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.useCacheForAllThreads: true
+ 2021-02-28 18:27:32,310 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 2021-02-28 18:27:32,324 DEBUG [main] ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+ 2021-02-28 18:27:32,324 DEBUG [main] ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+ 2021-02-28 18:27:32,325 DEBUG [main] ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 2021-02-28 18:27:33,259 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 5956 (auto-detected)
+ 2021-02-28 18:27:33,263 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+ 2021-02-28 18:27:33,264 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+ 2021-02-28 18:27:33,281 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+ 2021-02-28 18:27:33,282 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+ 2021-02-28 18:27:33,326 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 0c:96:e6:ff:fe:e5:15:49 (auto-detected)
+ 2021-02-28 18:27:33,401 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+ 2021-02-28 18:27:33,401 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+ 2021-02-28 18:27:33,402 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1fa38a82
+ 2021-02-28 18:27:33,446 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 2021-02-28 18:27:33,447 DEBUG [AsyncHttpClient-1-2] Recycler:101 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 2021-02-28 18:27:33,448 DEBUG [AsyncHttpClient-1-2] Recycler:102 - -Dio.netty.recycler.linkCapacity: 16
+ 2021-02-28 18:27:33,449 DEBUG [AsyncHttpClient-1-2] Recycler:103 - -Dio.netty.recycler.ratio: 8
+ 2021-02-28 18:27:33,450 DEBUG [AsyncHttpClient-1-2] Recycler:104 - -Dio.netty.recycler.delayedQueue.ratio: 8
+ 2021-02-28 18:27:36,708 DEBUG [main] ThreadLocalRandom:212 - -Dio.netty.initialSeedUniquifier: 0x40d078a258d57f55
+ 2021-02-28 18:27:36,757  INFO [main] GenerateLogs:16 - Launcg Browser
+ 2021-02-28 18:27:38,655  INFO [main] GenerateLogs:19 - Google url has been lunched
+ 2021-02-28 18:27:38,667  INFO [main] GenerateLogs:23 - tittle vale is: Google
+ 2021-02-28 18:27:38,667  INFO [main] GenerateLogs:27 - Correct tittle is google and test case passed
+ 2021-02-28 18:31:52,625 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+ 2021-02-28 18:31:52,635 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+ 2021-02-28 18:31:52,636 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+ 2021-02-28 18:31:52,643 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@16d04d3d
+ 2021-02-28 18:31:52,667 DEBUG [main] PlatformDependent:1028 - Platform: Windows
+ 2021-02-28 18:31:52,670 DEBUG [main] PlatformDependent0:417 - -Dio.netty.noUnsafe: false
+ 2021-02-28 18:31:52,670 DEBUG [main] PlatformDependent0:889 - Java version: 15
+ 2021-02-28 18:31:52,673 DEBUG [main] PlatformDependent0:130 - sun.misc.Unsafe.theUnsafe: available
+ 2021-02-28 18:31:52,674 DEBUG [main] PlatformDependent0:154 - sun.misc.Unsafe.copyMemory: available
+ 2021-02-28 18:31:52,675 DEBUG [main] PlatformDependent0:192 - java.nio.Buffer.address: available
+ 2021-02-28 18:31:52,676 DEBUG [main] PlatformDependent0:266 - direct buffer constructor: unavailable
+ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:15)
+2021-02-28 18:31:52,680 DEBUG [main] PlatformDependent0:331 - java.nio.Bits.unaligned: available, true
+ 2021-02-28 18:31:52,682 DEBUG [main] PlatformDependent0:390 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @54d9d12d
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:15)
+2021-02-28 18:31:52,684 DEBUG [main] PlatformDependent0:403 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+ 2021-02-28 18:31:52,684 DEBUG [main] PlatformDependent:1071 - sun.misc.Unsafe: available
+ 2021-02-28 18:31:52,712 DEBUG [main] PlatformDependent:1173 - maxDirectMemory: 4263510016 bytes (maybe)
+ 2021-02-28 18:31:52,715 DEBUG [main] PlatformDependent:1192 - -Dio.netty.tmpdir: C:\Users\EKTA~1.NAR\AppData\Local\Temp (java.io.tmpdir)
+ 2021-02-28 18:31:52,715 DEBUG [main] PlatformDependent:1271 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 2021-02-28 18:31:52,716 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+ 2021-02-28 18:31:52,717 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 2021-02-28 18:31:52,718 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+ 2021-02-28 18:31:52,718 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+ 2021-02-28 18:31:52,729 DEBUG [main] PlatformDependent:932 - org.jctools-core.MpscChunkedArrayQueue: available
+ 2021-02-28 18:31:52,756 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 2021-02-28 18:31:52,756 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 2021-02-28 18:31:53,089 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 2021-02-28 18:31:53,089 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+ 2021-02-28 18:31:53,121 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+ 2021-02-28 18:31:53,130 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+ 2021-02-28 18:31:53,130 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+ 2021-02-28 18:31:53,185 DEBUG [main] PooledByteBufAllocator:154 - -Dio.netty.allocator.numHeapArenas: 8
+ 2021-02-28 18:31:53,185 DEBUG [main] PooledByteBufAllocator:155 - -Dio.netty.allocator.numDirectArenas: 8
+ 2021-02-28 18:31:53,185 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.pageSize: 8192
+ 2021-02-28 18:31:53,185 DEBUG [main] PooledByteBufAllocator:162 - -Dio.netty.allocator.maxOrder: 11
+ 2021-02-28 18:31:53,186 DEBUG [main] PooledByteBufAllocator:166 - -Dio.netty.allocator.chunkSize: 16777216
+ 2021-02-28 18:31:53,186 DEBUG [main] PooledByteBufAllocator:167 - -Dio.netty.allocator.smallCacheSize: 256
+ 2021-02-28 18:31:53,186 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.normalCacheSize: 64
+ 2021-02-28 18:31:53,186 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 2021-02-28 18:31:53,186 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.cacheTrimInterval: 8192
+ 2021-02-28 18:31:53,187 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 2021-02-28 18:31:53,187 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.useCacheForAllThreads: true
+ 2021-02-28 18:31:53,187 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 2021-02-28 18:31:53,198 DEBUG [main] ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+ 2021-02-28 18:31:53,199 DEBUG [main] ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+ 2021-02-28 18:31:53,199 DEBUG [main] ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 2021-02-28 18:31:54,104 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 13080 (auto-detected)
+ 2021-02-28 18:31:54,107 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+ 2021-02-28 18:31:54,107 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+ 2021-02-28 18:31:54,123 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+ 2021-02-28 18:31:54,124 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+ 2021-02-28 18:31:54,172 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 0c:96:e6:ff:fe:e5:15:49 (auto-detected)
+ 2021-02-28 18:31:54,235 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+ 2021-02-28 18:31:54,236 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+ 2021-02-28 18:31:54,236 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1fa38a82
+ 2021-02-28 18:31:54,269 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 2021-02-28 18:31:54,270 DEBUG [AsyncHttpClient-1-2] Recycler:101 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 2021-02-28 18:31:54,270 DEBUG [AsyncHttpClient-1-2] Recycler:102 - -Dio.netty.recycler.linkCapacity: 16
+ 2021-02-28 18:31:54,271 DEBUG [AsyncHttpClient-1-2] Recycler:103 - -Dio.netty.recycler.ratio: 8
+ 2021-02-28 18:31:54,271 DEBUG [AsyncHttpClient-1-2] Recycler:104 - -Dio.netty.recycler.delayedQueue.ratio: 8
+ 2021-02-28 18:31:57,493 DEBUG [main] ThreadLocalRandom:212 - -Dio.netty.initialSeedUniquifier: 0xf84843633fea2d37
+ 2021-02-28 18:31:57,540  INFO [main] GenerateLogs:16 - Launcg Browser
+ 2021-02-28 18:31:58,783  INFO [main] GenerateLogs:19 - Google url has been lunched
+ 2021-02-28 18:31:58,796  INFO [main] GenerateLogs:23 - tittle vale is: Google
+ 2021-02-28 18:31:58,796  INFO [main] GenerateLogs:27 - Correct tittle is google and test case passed
+ 2021-02-28 18:42:15,109 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+ 2021-02-28 18:42:15,121 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+ 2021-02-28 18:42:15,121 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+ 2021-02-28 18:42:15,128 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@16d04d3d
+ 2021-02-28 18:42:15,154 DEBUG [main] PlatformDependent:1028 - Platform: Windows
+ 2021-02-28 18:42:15,157 DEBUG [main] PlatformDependent0:417 - -Dio.netty.noUnsafe: false
+ 2021-02-28 18:42:15,157 DEBUG [main] PlatformDependent0:889 - Java version: 15
+ 2021-02-28 18:42:15,162 DEBUG [main] PlatformDependent0:130 - sun.misc.Unsafe.theUnsafe: available
+ 2021-02-28 18:42:15,163 DEBUG [main] PlatformDependent0:154 - sun.misc.Unsafe.copyMemory: available
+ 2021-02-28 18:42:15,165 DEBUG [main] PlatformDependent0:192 - java.nio.Buffer.address: available
+ 2021-02-28 18:42:15,168 DEBUG [main] PlatformDependent0:266 - direct buffer constructor: unavailable
+ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:15)
+2021-02-28 18:42:15,172 DEBUG [main] PlatformDependent0:331 - java.nio.Bits.unaligned: available, true
+ 2021-02-28 18:42:15,174 DEBUG [main] PlatformDependent0:390 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @54d9d12d
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:15)
+2021-02-28 18:42:15,175 DEBUG [main] PlatformDependent0:403 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+ 2021-02-28 18:42:15,176 DEBUG [main] PlatformDependent:1071 - sun.misc.Unsafe: available
+ 2021-02-28 18:42:15,197 DEBUG [main] PlatformDependent:1173 - maxDirectMemory: 4263510016 bytes (maybe)
+ 2021-02-28 18:42:15,199 DEBUG [main] PlatformDependent:1192 - -Dio.netty.tmpdir: C:\Users\EKTA~1.NAR\AppData\Local\Temp (java.io.tmpdir)
+ 2021-02-28 18:42:15,199 DEBUG [main] PlatformDependent:1271 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 2021-02-28 18:42:15,201 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+ 2021-02-28 18:42:15,201 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 2021-02-28 18:42:15,202 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+ 2021-02-28 18:42:15,202 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+ 2021-02-28 18:42:15,212 DEBUG [main] PlatformDependent:932 - org.jctools-core.MpscChunkedArrayQueue: available
+ 2021-02-28 18:42:15,236 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 2021-02-28 18:42:15,236 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 2021-02-28 18:42:15,548 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 2021-02-28 18:42:15,549 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+ 2021-02-28 18:42:15,578 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+ 2021-02-28 18:42:15,587 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+ 2021-02-28 18:42:15,588 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+ 2021-02-28 18:42:15,631 DEBUG [main] PooledByteBufAllocator:154 - -Dio.netty.allocator.numHeapArenas: 8
+ 2021-02-28 18:42:15,631 DEBUG [main] PooledByteBufAllocator:155 - -Dio.netty.allocator.numDirectArenas: 8
+ 2021-02-28 18:42:15,631 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.pageSize: 8192
+ 2021-02-28 18:42:15,631 DEBUG [main] PooledByteBufAllocator:162 - -Dio.netty.allocator.maxOrder: 11
+ 2021-02-28 18:42:15,632 DEBUG [main] PooledByteBufAllocator:166 - -Dio.netty.allocator.chunkSize: 16777216
+ 2021-02-28 18:42:15,632 DEBUG [main] PooledByteBufAllocator:167 - -Dio.netty.allocator.smallCacheSize: 256
+ 2021-02-28 18:42:15,632 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.normalCacheSize: 64
+ 2021-02-28 18:42:15,632 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 2021-02-28 18:42:15,632 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.cacheTrimInterval: 8192
+ 2021-02-28 18:42:15,633 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 2021-02-28 18:42:15,633 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.useCacheForAllThreads: true
+ 2021-02-28 18:42:15,633 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 2021-02-28 18:42:15,642 DEBUG [main] ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+ 2021-02-28 18:42:15,643 DEBUG [main] ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+ 2021-02-28 18:42:15,643 DEBUG [main] ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 2021-02-28 18:42:16,543 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 22896 (auto-detected)
+ 2021-02-28 18:42:16,546 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+ 2021-02-28 18:42:16,547 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+ 2021-02-28 18:42:16,563 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+ 2021-02-28 18:42:16,564 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+ 2021-02-28 18:42:16,603 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 0c:96:e6:ff:fe:e5:15:49 (auto-detected)
+ 2021-02-28 18:42:16,669 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+ 2021-02-28 18:42:16,670 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+ 2021-02-28 18:42:16,671 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7e74a5ab
+ 2021-02-28 18:42:16,699 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 2021-02-28 18:42:16,701 DEBUG [AsyncHttpClient-1-2] Recycler:101 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 2021-02-28 18:42:16,701 DEBUG [AsyncHttpClient-1-2] Recycler:102 - -Dio.netty.recycler.linkCapacity: 16
+ 2021-02-28 18:42:16,701 DEBUG [AsyncHttpClient-1-2] Recycler:103 - -Dio.netty.recycler.ratio: 8
+ 2021-02-28 18:42:16,701 DEBUG [AsyncHttpClient-1-2] Recycler:104 - -Dio.netty.recycler.delayedQueue.ratio: 8
+ 2021-02-28 18:42:19,774 DEBUG [main] ThreadLocalRandom:212 - -Dio.netty.initialSeedUniquifier: 0x67d8482b5c61a7ca
+ 2021-02-28 18:42:19,823  INFO [main] GenerateLogs:16 - Launcg Browser
+ 2021-02-28 18:42:21,510  INFO [main] GenerateLogs:19 - Google url has been lunched
+ 2021-02-28 18:42:21,517  INFO [main] GenerateLogs:23 - tittle vale is: Google
+ 2021-02-28 18:42:21,518  INFO [main] GenerateLogs:27 - Correct tittle is google and test case passed
+ 2021-02-28 18:47:21,126 DEBUG [main] GenerateLogs:20 - Log4j appender configuration is successful !!
+ 2021-02-28 18:47:21,323 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+ 2021-02-28 18:47:21,332 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+ 2021-02-28 18:47:21,332 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+ 2021-02-28 18:47:21,337 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@564fabc8
+ 2021-02-28 18:47:21,363 DEBUG [main] PlatformDependent:1028 - Platform: Windows
+ 2021-02-28 18:47:21,367 DEBUG [main] PlatformDependent0:417 - -Dio.netty.noUnsafe: false
+ 2021-02-28 18:47:21,368 DEBUG [main] PlatformDependent0:889 - Java version: 15
+ 2021-02-28 18:47:21,370 DEBUG [main] PlatformDependent0:130 - sun.misc.Unsafe.theUnsafe: available
+ 2021-02-28 18:47:21,373 DEBUG [main] PlatformDependent0:154 - sun.misc.Unsafe.copyMemory: available
+ 2021-02-28 18:47:21,375 DEBUG [main] PlatformDependent0:192 - java.nio.Buffer.address: available
+ 2021-02-28 18:47:21,377 DEBUG [main] PlatformDependent0:266 - direct buffer constructor: unavailable
+ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:23)
+2021-02-28 18:47:21,382 DEBUG [main] PlatformDependent0:331 - java.nio.Bits.unaligned: available, true
+ 2021-02-28 18:47:21,384 DEBUG [main] PlatformDependent0:390 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @45752059
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:23)
+2021-02-28 18:47:21,385 DEBUG [main] PlatformDependent0:403 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+ 2021-02-28 18:47:21,385 DEBUG [main] PlatformDependent:1071 - sun.misc.Unsafe: available
+ 2021-02-28 18:47:21,409 DEBUG [main] PlatformDependent:1173 - maxDirectMemory: 4263510016 bytes (maybe)
+ 2021-02-28 18:47:21,410 DEBUG [main] PlatformDependent:1192 - -Dio.netty.tmpdir: C:\Users\EKTA~1.NAR\AppData\Local\Temp (java.io.tmpdir)
+ 2021-02-28 18:47:21,410 DEBUG [main] PlatformDependent:1271 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 2021-02-28 18:47:21,411 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+ 2021-02-28 18:47:21,412 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 2021-02-28 18:47:21,413 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+ 2021-02-28 18:47:21,413 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+ 2021-02-28 18:47:21,426 DEBUG [main] PlatformDependent:932 - org.jctools-core.MpscChunkedArrayQueue: available
+ 2021-02-28 18:47:21,452 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 2021-02-28 18:47:21,452 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 2021-02-28 18:47:21,840 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 2021-02-28 18:47:21,840 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+ 2021-02-28 18:47:21,868 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+ 2021-02-28 18:47:21,877 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+ 2021-02-28 18:47:21,877 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+ 2021-02-28 18:47:21,921 DEBUG [main] PooledByteBufAllocator:154 - -Dio.netty.allocator.numHeapArenas: 8
+ 2021-02-28 18:47:21,921 DEBUG [main] PooledByteBufAllocator:155 - -Dio.netty.allocator.numDirectArenas: 8
+ 2021-02-28 18:47:21,921 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.pageSize: 8192
+ 2021-02-28 18:47:21,921 DEBUG [main] PooledByteBufAllocator:162 - -Dio.netty.allocator.maxOrder: 11
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:166 - -Dio.netty.allocator.chunkSize: 16777216
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:167 - -Dio.netty.allocator.smallCacheSize: 256
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.normalCacheSize: 64
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.cacheTrimInterval: 8192
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.useCacheForAllThreads: true
+ 2021-02-28 18:47:21,922 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 2021-02-28 18:47:21,933 DEBUG [main] ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+ 2021-02-28 18:47:21,933 DEBUG [main] ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+ 2021-02-28 18:47:21,933 DEBUG [main] ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 2021-02-28 18:47:22,825 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 20760 (auto-detected)
+ 2021-02-28 18:47:22,828 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+ 2021-02-28 18:47:22,829 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+ 2021-02-28 18:47:22,844 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+ 2021-02-28 18:47:22,845 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+ 2021-02-28 18:47:22,888 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 0c:96:e6:ff:fe:e5:15:49 (auto-detected)
+ 2021-02-28 18:47:22,951 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+ 2021-02-28 18:47:22,951 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+ 2021-02-28 18:47:22,951 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5136b810
+ 2021-02-28 18:47:22,977 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 2021-02-28 18:47:22,978 DEBUG [AsyncHttpClient-1-2] Recycler:101 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 2021-02-28 18:47:22,978 DEBUG [AsyncHttpClient-1-2] Recycler:102 - -Dio.netty.recycler.linkCapacity: 16
+ 2021-02-28 18:47:22,978 DEBUG [AsyncHttpClient-1-2] Recycler:103 - -Dio.netty.recycler.ratio: 8
+ 2021-02-28 18:47:22,979 DEBUG [AsyncHttpClient-1-2] Recycler:104 - -Dio.netty.recycler.delayedQueue.ratio: 8
+ 2021-02-28 18:47:26,606 DEBUG [main] ThreadLocalRandom:212 - -Dio.netty.initialSeedUniquifier: 0x0ce858c69069ad6c
+ 2021-02-28 18:47:26,669  INFO [main] GenerateLogs:24 - Launcg Browser
+ 2021-02-28 18:47:28,234  INFO [main] GenerateLogs:27 - Google url has been lunched
+ 2021-02-28 18:47:28,248  INFO [main] GenerateLogs:31 - tittle vale is: Google
+ 2021-02-28 18:47:28,248  INFO [main] GenerateLogs:35 - Correct tittle is google and test case passed
+ 2021-02-28 18:57:12,216 DEBUG [main] GenerateLogs:22 - Log4j appender configuration is successful !!
+ 2021-02-28 18:57:12,451 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+ 2021-02-28 18:57:12,464 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+ 2021-02-28 18:57:12,465 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+ 2021-02-28 18:57:12,477 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@8f4ea7c
+ 2021-02-28 18:57:12,548 DEBUG [main] PlatformDependent:1028 - Platform: Windows
+ 2021-02-28 18:57:12,551 DEBUG [main] PlatformDependent0:417 - -Dio.netty.noUnsafe: false
+ 2021-02-28 18:57:12,551 DEBUG [main] PlatformDependent0:889 - Java version: 15
+ 2021-02-28 18:57:12,554 DEBUG [main] PlatformDependent0:130 - sun.misc.Unsafe.theUnsafe: available
+ 2021-02-28 18:57:12,558 DEBUG [main] PlatformDependent0:154 - sun.misc.Unsafe.copyMemory: available
+ 2021-02-28 18:57:12,559 DEBUG [main] PlatformDependent0:192 - java.nio.Buffer.address: available
+ 2021-02-28 18:57:12,561 DEBUG [main] PlatformDependent0:266 - direct buffer constructor: unavailable
+ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:25)
+2021-02-28 18:57:12,569 DEBUG [main] PlatformDependent0:331 - java.nio.Bits.unaligned: available, true
+ 2021-02-28 18:57:12,570 DEBUG [main] PlatformDependent0:390 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @702657cc
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:25)
+2021-02-28 18:57:12,571 DEBUG [main] PlatformDependent0:403 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+ 2021-02-28 18:57:12,576 DEBUG [main] PlatformDependent:1071 - sun.misc.Unsafe: available
+ 2021-02-28 18:57:12,612 DEBUG [main] PlatformDependent:1173 - maxDirectMemory: 4263510016 bytes (maybe)
+ 2021-02-28 18:57:12,613 DEBUG [main] PlatformDependent:1192 - -Dio.netty.tmpdir: C:\Users\EKTA~1.NAR\AppData\Local\Temp (java.io.tmpdir)
+ 2021-02-28 18:57:12,613 DEBUG [main] PlatformDependent:1271 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 2021-02-28 18:57:12,615 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+ 2021-02-28 18:57:12,615 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 2021-02-28 18:57:12,617 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+ 2021-02-28 18:57:12,618 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+ 2021-02-28 18:57:12,633 DEBUG [main] PlatformDependent:932 - org.jctools-core.MpscChunkedArrayQueue: available
+ 2021-02-28 18:57:12,656 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 2021-02-28 18:57:12,656 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 2021-02-28 18:57:13,018 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 2021-02-28 18:57:13,019 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+ 2021-02-28 18:57:13,051 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+ 2021-02-28 18:57:13,061 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+ 2021-02-28 18:57:13,061 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+ 2021-02-28 18:57:13,104 DEBUG [main] PooledByteBufAllocator:154 - -Dio.netty.allocator.numHeapArenas: 8
+ 2021-02-28 18:57:13,105 DEBUG [main] PooledByteBufAllocator:155 - -Dio.netty.allocator.numDirectArenas: 8
+ 2021-02-28 18:57:13,105 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.pageSize: 8192
+ 2021-02-28 18:57:13,106 DEBUG [main] PooledByteBufAllocator:162 - -Dio.netty.allocator.maxOrder: 11
+ 2021-02-28 18:57:13,106 DEBUG [main] PooledByteBufAllocator:166 - -Dio.netty.allocator.chunkSize: 16777216
+ 2021-02-28 18:57:13,106 DEBUG [main] PooledByteBufAllocator:167 - -Dio.netty.allocator.smallCacheSize: 256
+ 2021-02-28 18:57:13,107 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.normalCacheSize: 64
+ 2021-02-28 18:57:13,107 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 2021-02-28 18:57:13,107 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.cacheTrimInterval: 8192
+ 2021-02-28 18:57:13,107 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 2021-02-28 18:57:13,107 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.useCacheForAllThreads: true
+ 2021-02-28 18:57:13,107 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 2021-02-28 18:57:13,117 DEBUG [main] ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+ 2021-02-28 18:57:13,118 DEBUG [main] ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+ 2021-02-28 18:57:13,118 DEBUG [main] ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 2021-02-28 18:57:14,065 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 20184 (auto-detected)
+ 2021-02-28 18:57:14,068 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+ 2021-02-28 18:57:14,068 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+ 2021-02-28 18:57:14,085 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+ 2021-02-28 18:57:14,087 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+ 2021-02-28 18:57:14,135 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 0c:96:e6:ff:fe:e5:15:49 (auto-detected)
+ 2021-02-28 18:57:14,212 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+ 2021-02-28 18:57:14,212 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+ 2021-02-28 18:57:14,212 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5136b810
+ 2021-02-28 18:57:14,245 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 2021-02-28 18:57:14,246 DEBUG [AsyncHttpClient-1-2] Recycler:101 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 2021-02-28 18:57:14,246 DEBUG [AsyncHttpClient-1-2] Recycler:102 - -Dio.netty.recycler.linkCapacity: 16
+ 2021-02-28 18:57:14,246 DEBUG [AsyncHttpClient-1-2] Recycler:103 - -Dio.netty.recycler.ratio: 8
+ 2021-02-28 18:57:14,246 DEBUG [AsyncHttpClient-1-2] Recycler:104 - -Dio.netty.recycler.delayedQueue.ratio: 8
+ 2021-02-28 18:57:17,261 DEBUG [main] ThreadLocalRandom:212 - -Dio.netty.initialSeedUniquifier: 0x21a9a53ef0c6afa0
+ 2021-02-28 18:57:17,299  INFO [main] GenerateLogs:26 - Launcg Browser
+ 2021-02-28 18:57:18,346  INFO [main] GenerateLogs:29 - Google url has been lunched
+ 2021-02-28 18:57:18,355  INFO [main] GenerateLogs:33 - tittle vale is: Google
+ 2021-02-28 18:57:18,356  INFO [main] GenerateLogs:37 - Correct tittle is google and test case passed
+ 2021-03-02 13:21:32,418 DEBUG [main] GenerateLogs:19 - Log4j appender configuration is successful !!
+ 2021-03-02 13:21:32,716 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+ 2021-03-02 13:21:32,727 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+ 2021-03-02 13:21:32,728 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+ 2021-03-02 13:21:32,735 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@8f4ea7c
+ 2021-03-02 13:21:32,773 DEBUG [main] PlatformDependent:1028 - Platform: Windows
+ 2021-03-02 13:21:32,777 DEBUG [main] PlatformDependent0:417 - -Dio.netty.noUnsafe: false
+ 2021-03-02 13:21:32,777 DEBUG [main] PlatformDependent0:889 - Java version: 15
+ 2021-03-02 13:21:32,782 DEBUG [main] PlatformDependent0:130 - sun.misc.Unsafe.theUnsafe: available
+ 2021-03-02 13:21:32,784 DEBUG [main] PlatformDependent0:154 - sun.misc.Unsafe.copyMemory: available
+ 2021-03-02 13:21:32,785 DEBUG [main] PlatformDependent0:192 - java.nio.Buffer.address: available
+ 2021-03-02 13:21:32,789 DEBUG [main] PlatformDependent0:266 - direct buffer constructor: unavailable
+ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:22)
+2021-03-02 13:21:32,794 DEBUG [main] PlatformDependent0:331 - java.nio.Bits.unaligned: available, true
+ 2021-03-02 13:21:32,796 DEBUG [main] PlatformDependent0:390 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @702657cc
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.crm.qa.util.GenerateLogs.main(GenerateLogs.java:22)
+2021-03-02 13:21:32,797 DEBUG [main] PlatformDependent0:403 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+ 2021-03-02 13:21:32,797 DEBUG [main] PlatformDependent:1071 - sun.misc.Unsafe: available
+ 2021-03-02 13:21:32,832 DEBUG [main] PlatformDependent:1173 - maxDirectMemory: 4263510016 bytes (maybe)
+ 2021-03-02 13:21:32,833 DEBUG [main] PlatformDependent:1192 - -Dio.netty.tmpdir: C:\Users\EKTA~1.NAR\AppData\Local\Temp (java.io.tmpdir)
+ 2021-03-02 13:21:32,833 DEBUG [main] PlatformDependent:1271 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+ 2021-03-02 13:21:32,836 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+ 2021-03-02 13:21:32,838 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+ 2021-03-02 13:21:32,841 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+ 2021-03-02 13:21:32,841 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+ 2021-03-02 13:21:32,859 DEBUG [main] PlatformDependent:932 - org.jctools-core.MpscChunkedArrayQueue: available
+ 2021-03-02 13:21:32,889 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+ 2021-03-02 13:21:32,889 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+ 2021-03-02 13:21:33,264 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+ 2021-03-02 13:21:33,265 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+ 2021-03-02 13:21:33,306 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+ 2021-03-02 13:21:33,317 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+ 2021-03-02 13:21:33,317 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+ 2021-03-02 13:21:33,378 DEBUG [main] PooledByteBufAllocator:154 - -Dio.netty.allocator.numHeapArenas: 8
+ 2021-03-02 13:21:33,379 DEBUG [main] PooledByteBufAllocator:155 - -Dio.netty.allocator.numDirectArenas: 8
+ 2021-03-02 13:21:33,380 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.pageSize: 8192
+ 2021-03-02 13:21:33,380 DEBUG [main] PooledByteBufAllocator:162 - -Dio.netty.allocator.maxOrder: 11
+ 2021-03-02 13:21:33,381 DEBUG [main] PooledByteBufAllocator:166 - -Dio.netty.allocator.chunkSize: 16777216
+ 2021-03-02 13:21:33,381 DEBUG [main] PooledByteBufAllocator:167 - -Dio.netty.allocator.smallCacheSize: 256
+ 2021-03-02 13:21:33,381 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.normalCacheSize: 64
+ 2021-03-02 13:21:33,381 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+ 2021-03-02 13:21:33,382 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.cacheTrimInterval: 8192
+ 2021-03-02 13:21:33,382 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+ 2021-03-02 13:21:33,382 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.useCacheForAllThreads: true
+ 2021-03-02 13:21:33,382 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+ 2021-03-02 13:21:33,398 DEBUG [main] ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+ 2021-03-02 13:21:33,399 DEBUG [main] ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+ 2021-03-02 13:21:33,399 DEBUG [main] ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ 2021-03-02 13:21:34,879 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 19328 (auto-detected)
+ 2021-03-02 13:21:34,882 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+ 2021-03-02 13:21:34,883 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+ 2021-03-02 13:21:34,898 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+ 2021-03-02 13:21:34,899 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+ 2021-03-02 13:21:34,943 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 0c:96:e6:ff:fe:e5:15:49 (auto-detected)
+ 2021-03-02 13:21:35,021 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+ 2021-03-02 13:21:35,022 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+ 2021-03-02 13:21:35,022 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6c1731ad
+ 2021-03-02 13:21:35,055 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+ 2021-03-02 13:21:35,056 DEBUG [AsyncHttpClient-1-2] Recycler:101 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+ 2021-03-02 13:21:35,056 DEBUG [AsyncHttpClient-1-2] Recycler:102 - -Dio.netty.recycler.linkCapacity: 16
+ 2021-03-02 13:21:35,056 DEBUG [AsyncHttpClient-1-2] Recycler:103 - -Dio.netty.recycler.ratio: 8
+ 2021-03-02 13:21:35,056 DEBUG [AsyncHttpClient-1-2] Recycler:104 - -Dio.netty.recycler.delayedQueue.ratio: 8
+ 2021-03-02 13:21:38,514 DEBUG [main] ThreadLocalRandom:212 - -Dio.netty.initialSeedUniquifier: 0xf2937fa5b8e2ae19
+ 2021-03-02 13:21:38,557  INFO [main] GenerateLogs:23 - Launcg Browser
+ 2021-03-02 13:21:40,289  INFO [main] GenerateLogs:26 - Google url has been lunched
+ 2021-03-02 13:21:40,304  INFO [main] GenerateLogs:30 - tittle vale is: Google
+ 2021-03-02 13:21:40,305  INFO [main] GenerateLogs:34 - Correct tittle is google and test case passed
+ 
